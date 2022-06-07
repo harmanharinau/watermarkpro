@@ -8,8 +8,8 @@
 # Edit anything at your own risk!
 
 # Don't forget to help me if I done any mistake in the codes.
-# Support Group: @DevsZone 
-# Bots Channel: @Discovery_Updates
+# Support : @Teamx69
+# Bots Channel: @CyniteBots
 
 
 import os
@@ -52,7 +52,7 @@ async def HelpWatermark(bot, cmd):
 	await cmd.reply_text(
 		text=Config.USAGE_WATERMARK_ADDER,
 		parse_mode="Markdown",
-		reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Developer", url="https://t.me/AbirHasan2005"), InlineKeyboardButton("Support Group", url="https://t.me/greymatters_bots_discussion")], [InlineKeyboardButton("Bots Channel", url="https://t.me/greymatter_bots")], [InlineKeyboardButton("Source Code", url="https://github.com/GreyMatter658/Watermark-Bot")]]),
+		reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Developer", url="https://t.me/Teamx69"), InlineKeyboardButton("Support", url="https://t.me/Teamx69")], [InlineKeyboardButton("Bots Channel", url="https://t.me/CyniteBots")], [InlineKeyboardButton("Youtube Channel", url="https://youtube.com/channel/UCiaz-J50QhtJ73XEEjP_aLQ")]]),
 		disable_web_page_preview=True
 	)
 
@@ -235,7 +235,7 @@ async def VidWatermarkAdder(bot, cmd):
 		duration = metadata.get('duration').seconds
 	the_media_file_name = os.path.basename(the_media)
 	main_file_name = os.path.splitext(the_media_file_name)[0]
-	output_vid = main_file_name + "_[" + str(cmd.from_user.id) + "]_[" + str(time.time()) + "]_[@AbirHasan2005]" + ".mp4"
+	output_vid = main_file_name + "_[" + str(cmd.from_user.id) + "]_[" + str(time.time()) + "]_[@teamx69]" + ".mp4"
 	progress = Config.DOWN_PATH + "/WatermarkAdder/" + str(cmd.from_user.id) + "/progress.txt"
 	try:
 		output_vid = await vidmark(the_media, editable, progress, watermark_path, output_vid, duration, logs_msg, status, preset, watermark_position, watermark_size)
@@ -312,7 +312,7 @@ async def VidWatermarkAdder(bot, cmd):
 				await logs_msg.edit("Successfully Uploaded File to Streamtape!\n\nI am Free Now!", parse_mode="Markdown", disable_web_page_preview=True)
 		except Exception as e:
 			print(f"Error: {e}")
-			await editable.edit("Sorry, Something went wrong!\n\nCan't Upload to Streamtape. You can report at [Support Group](https://t.me/greymatters_bots_discussion).")
+			await editable.edit("Sorry, Something went wrong!\n\nCan't Upload to Streamtape. You can report at [Support](https://t.me/teamx69).")
 			await logs_msg.edit(f"Got Error While Uploading to Streamtape!\n\nError: {e}")
 		await delete_all()
 		return
@@ -395,7 +395,7 @@ async def button(bot, cmd: CallbackQuery):
 				user = await bot.get_chat_member(int(Config.UPDATES_CHANNEL), cmd.message.chat.id)
 				if user.status == "kicked":
 					await cmd.message.edit(
-						text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/greymatters_bots_discussion).",
+						text="Sorry Sir, You are Banned to use me. Contact my [Support](https://t.me/Teamx69).",
 						parse_mode="markdown",
 						disable_web_page_preview=True
 					)
@@ -418,7 +418,7 @@ async def button(bot, cmd: CallbackQuery):
 				return
 			except Exception:
 				await cmd.message.edit(
-					text="Something went Wrong. Contact my [Support Group](https://t.me/greymatters_bots_discussion).",
+					text="Something went Wrong. Contact my [Support](https://t.me/teamx69).",
 					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
@@ -426,7 +426,7 @@ async def button(bot, cmd: CallbackQuery):
 		await cmd.message.edit(
 			text=Config.USAGE_WATERMARK_ADDER,
 			parse_mode="Markdown",
-			reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Developer", url="https://t.me/AbirHasan2005"), InlineKeyboardButton("Support Group", url="https://t.me/greymatters_bots_discussion")], [InlineKeyboardButton("Bots Channel", url="https://t.me/greymatter_bots")]]),
+			reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Developer", url="https://t.me/teamx69"), InlineKeyboardButton("Support Group", url="https://t.me/teamx69")], [InlineKeyboardButton("Bots Channel", url="https://t.me/Cynitebots")]]),
 			disable_web_page_preview=True
 		)
 
@@ -443,7 +443,7 @@ async def button(bot, cmd: CallbackQuery):
 				user = await bot.get_chat_member(int(Config.UPDATES_CHANNEL), cmd.message.chat.id)
 				if user.status == "kicked":
 					await cmd.message.edit(
-						text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/greymatters_bots_discussion).",
+						text="Sorry Sir, You are Banned to use me. Contact my [Support](https://t.me/teamx69).",
 						parse_mode="markdown",
 						disable_web_page_preview=True
 					)
@@ -466,7 +466,7 @@ async def button(bot, cmd: CallbackQuery):
 				return
 			except Exception:
 				await cmd.message.edit(
-					text="Something went Wrong. Contact my [Support Group](https://t.me/greymatters_bots_discussion).",
+					text="Something went Wrong. Contact my [Support](https://t.me/teamx69).",
 					parse_mode="markdown",
 					disable_web_page_preview=True
 				)
